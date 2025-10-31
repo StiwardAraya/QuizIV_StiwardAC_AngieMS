@@ -1,0 +1,6 @@
+Uso de la IA
+1. Generación del problema y sus objetivos
+2. Estructura de la solución
+3. Optimización y explicación de soluciones
+4. Ajuste de mensajes en consola
+5. Manejo de errores
