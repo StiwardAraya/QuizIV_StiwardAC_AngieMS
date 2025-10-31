@@ -1,0 +1,28 @@
+Descripción del problema:
+
+Una empresa de telecomunicaciones ha sido contratada para 
+llevar internet de alta velocidad a varias comunidades rurales 
+aisladas en una región montañosa. La empresa debe instalar una 
+red de fibra óptica que conecte todas las comunidades de la manera 
+más económica posible.
+
+Existen 8 comunidades rurales identificadas llamadas A, B, C, D, E, F, G, H
+
+
+Objetivo:
+
+Diseñar la red de fibra óptica óptima que conecte todas las comunidades con 
+el mínimo costo total, asegurando que todas queden interconectadas.
+
+
+Para la solución el grupo debe:
+
+1) Modelar las conexiones entre comunidades como un grafo ponderado y mostrar
+su tabla de adyacencia (2 pts)
+2) Realizar un recorrido del grafo para verificar la conectividad (1 pts)
+3) Aplicar un algoritmo de Kruskal para construir el árbol de expansión 
+mínima (3 pts)
+4) Mostrar las conexiones seleccionadas y el costo total en consola (1 pts)
+5) Generar un archivo ".txt" con la información generada (2 pts)
+
+
