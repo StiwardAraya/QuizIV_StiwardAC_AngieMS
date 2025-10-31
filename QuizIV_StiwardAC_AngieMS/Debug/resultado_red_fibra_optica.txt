@@ -1,0 +1,81 @@
+========================================
+  RED DE FIBRA ÓPTICA - INFORME FINAL
+========================================
+
+PROYECTO: Instalación de Red de Fibra Óptica
+COMUNIDADES: A, B, C, D, E, F, G, H, I
+
+========================================
+   TABLA DE ADYACENCIA DEL GRAFO
+========================================
+
+Nodo | Adyacentes (Nodo:Peso)
+-----+---------------------------
+  A  | B:4, H:8
+  B  | A:4, C:8, H:11
+  C  | B:8, D:7, F:4, I:2
+  D  | C:7, E:9, F:14
+  E  | D:9, F:10
+  F  | C:4, D:14, E:10, G:2
+  G  | F:2, H:1, I:6
+  H  | A:8, B:11, G:1, I:7
+  I  | C:2, G:6, H:7
+
+========================================
+   VERIFICACIÓN DE CONECTIVIDAD
+========================================
+El grafo está COMPLETAMENTE conectado.
+Todas las comunidades son alcanzables.
+
+========================================
+   ALGORITMO DE KRUSKAL - RESULTADO
+========================================
+
+Árbol de Expansión Mínima (MST):
+
+Conexión  |  Costo (miles $)
+----------+-----------------
+   G-H     |       1
+   C-I     |       2
+   F-G     |       2
+   A-B     |       4
+   C-F     |       4
+   C-D     |       7
+   A-H     |       8
+   D-E     |       9
+----------+-----------------
+   TOTAL  |       37
+========================================
+
+RESUMEN EJECUTIVO:
+==================
+• Comunidades conectadas: 9
+• Conexiones instaladas: 8
+• Costo total: $37,000 USD
+
+METODOLOGÍA:
+============
+ALGORITMO UTILIZADO: Kruskal
+
+El algoritmo de Kruskal encuentra el árbol de expansión
+mínima (MST) mediante los siguientes pasos:
+
+1. Ordenar todas las aristas por peso (menor a mayor)
+2. Inicializar cada nodo como un conjunto independiente
+3. Para cada arista en orden:
+   - Si conecta dos conjuntos diferentes: seleccionarla
+   - Si crea un ciclo: descartarla
+4. Continuar hasta conectar todos los nodos
+
+ESTRUCTURA DE DATOS:
+====================
+• Grafo: Representado mediante lista de adyacencia
+• Union-Find: Para detección eficiente de ciclos
+  - Find: Búsqueda del representante con compresión de camino
+  - Union: Unión de conjuntos por rango
+
+CONCLUSIÓN:
+===========
+La red óptima de fibra óptica conecta todas las comunidades
+rurales con un costo mínimo de $37,000 USD, garantizando
+conectividad completa sin redundancias innecesarias.
